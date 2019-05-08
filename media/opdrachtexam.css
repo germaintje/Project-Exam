@@ -1,0 +1,210 @@
+body {
+	background-color: #EFEFEF;
+}
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #393B3C;
+    color: #ffffff;
+    padding: 5px;
+	text-align: right;
+}
+
+div.header h3 {
+	width: 70%;
+	float: left;
+	margin: 10px 0px 0px -10px;
+}
+
+/*zoek icon*/
+div.icon {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+/*dropdown menu*/
+.dropbtn {
+	background-color: #393B3C;
+	border: none;
+	cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #393B3C;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: grey;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 5px 10px;
+	text-decoration: none;
+	display: block;
+	background-color: grey;
+	border-radius: 5px;
+	text-align: left;
+	margin: 5px auto;
+	width: 60%;
+}
+
+.dropdown-content a:hover {
+	background-color: #E9E9E9;
+}
+
+.dropdown a:hover {
+	background-color: #f1f1f1
+}
+
+.show {
+	display:block;
+}
+
+/*einde dropdown menu*/
+
+.navigatielinks {
+	height: 2000px;
+}
+
+.navigatielinks a {
+	text-decoration: none;
+	color: #999A9B;
+}
+
+.navigatielinks p {
+	text-decoration: none;
+	color: #999A9B;
+}
+
+.navigatielinks hr {
+	width: 40px;
+	float: left;
+	color: #999A9B;
+}
+
+img.content {
+	opacity: 1;
+	width: 100%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+div.tekst {
+	text-align: center;
+	background-color: white;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	
+}
+
+div.tekst p{
+	color: #999A9B;
+}
+
+div.tekst:hover img.content {
+  opacity: 0.3;
+}
+
+div.content p{
+	color: lightgrey;
+}
+
+div.loadfooter {
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+	color: white;
+	background-color: #999A9B;
+	border-radius: 5px;
+}
+
+div.loadfooter a{
+	text-decoration: none;
+	color: white;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 900px) {
+    /* For desktop: */
+    .col-d-1 {width: 8.33%;}
+    .col-d-2 {width: 16.66%;}
+    .col-d-3 {width: 25%;}
+    .col-d-4 {width: 33.33%;}
+    .col-d-5 {width: 41.66%;}
+    .col-d-6 {width: 50%;}
+    .col-d-7 {width: 58.33%;}
+    .col-d-8 {width: 66.66%;}
+    .col-d-9 {width: 75%;}
+    .col-d-10 {width: 83.33%;}
+    .col-d-11 {width: 91.66%;}
+    .col-d-12 {width: 100%;}
+}
+
+/* uitschakelingen voor mobile, tablet*/
+@media screen and (max-width: 900px) {
+    .navigatielinks {
+        display: none !important;
+    }
+
+}
+
+/* uitschakeling navigatie deskop*/
+@media screen and (min-width: 900px) {
+    .header {
+        display: none !important;
+    }
+
+}
+
+/*uitschakeling logo deskop*/
+@media screen and (min-width: 900px) {
+    .nodesk {
+        display: none !important;
+    }
+
+}
